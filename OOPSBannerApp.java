@@ -1,19 +1,31 @@
 /**
  * OOPSBannerApp
- * UC2: Print OOPS Banner using *
+ * UC3: Print OOPS Banner using String.join()
  */
 
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
-        System.out.println(" ***     ***    *****    ***** ");
-        System.out.println("*   *   *   *   *   *    *     ");
-        System.out.println("*   *   *   *   *****    ****  ");
-        System.out.println("*   *   *   *   *        *     ");
-        System.out.println("*   *   *   *   *        *     ");
-        System.out.println("*   *   *   *   *        *     ");
-        System.out.println(" ***     ***    *        ***** ");
+        System.out.println(String.join(" ",
+                " *** ", " *** ", "*****", "*****"));
 
+        System.out.println(String.join(" ",
+                "*   *", "*   *", "*   *", "*"));
+
+        System.out.println(String.join(" ",
+                "*   *", "*   *", "*****", "****"));
+
+        System.out.println(String.join(" ",
+                "*   *", "*   *", "*", "*"));
+
+        System.out.println(String.join(" ",
+                "*   *", "*   *", "*", "*"));
+
+        System.out.println(String.join(" ",
+                "*   *", "*   *", "*", "*"));
+
+        System.out.println(String.join(" ",
+                " *** ", " *** ", "*", "*****"));
     }
 }
