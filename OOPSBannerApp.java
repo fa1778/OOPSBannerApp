@@ -1,31 +1,28 @@
 /**
  * OOPSBannerApp
- * UC3: Print OOPS Banner using String.join()
+ * UC4: Print OOPS Banner using Array and Loop
  */
 
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
-        System.out.println(String.join(" ",
-                " *** ", " *** ", "*****", "*****"));
+        // Step 1: Create array
+        String[] banner = {
 
-        System.out.println(String.join(" ",
-                "*   *", "*   *", "*   *", "*"));
+            String.join(" ", " *** ", " *** ", "*****", "*****"),
+            String.join(" ", "*   *", "*   *", "*   *", "*"),
+            String.join(" ", "*   *", "*   *", "*****", "****"),
+            String.join(" ", "*   *", "*   *", "*", "*"),
+            String.join(" ", "*   *", "*   *", "*", "*"),
+            String.join(" ", "*   *", "*   *", "*", "*"),
+            String.join(" ", " *** ", " *** ", "*", "*****")
 
-        System.out.println(String.join(" ",
-                "*   *", "*   *", "*****", "****"));
+        };
 
-        System.out.println(String.join(" ",
-                "*   *", "*   *", "*", "*"));
-
-        System.out.println(String.join(" ",
-                "*   *", "*   *", "*", "*"));
-
-        System.out.println(String.join(" ",
-                "*   *", "*   *", "*", "*"));
-
-        System.out.println(String.join(" ",
-                " *** ", " *** ", "*", "*****"));
+        // Step 2: Loop and print
+        for (String line : banner) {
+            System.out.println(line);
+        }
     }
 }
